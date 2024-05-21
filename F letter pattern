@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int s;
+    scanf("%d",&s);
+    int mid=(s+1)/2;
+    for(int i=1;i<=s;i++)
+    {
+        for(int j=1;j<=s;j++)
+        {
+            if(j==1 || i==1)
+            printf("* ");
+            else if(mid==i)
+            printf("* ");
+            else if(i==s)
+            printf(" ");
+        }printf("\n");
+    }
+    return 0;
+}
